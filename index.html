@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIPTK - Sistem Informasi Pengelolaan Tugas Kuliah</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>SIPTK</h1>
+      <p>Sistem Informasi Pengelolaan Tugas Kuliah</p>
+    </header>
+
+    <main>
+      <!-- Halaman Login -->
+      <section id="login">
+        <h2>Login Mahasiswa/Dosen</h2>
+        <form>
+          <label for="email">Email / NIM</label>
+          <input
+            type="text"
+            id="email"
+            placeholder="email@example.com"
+            required
+          />
+
+          <label for="password">Password</label>
+          <input type="password" id="password" required />
+
+          <button type="submit">Login</button>
+          <p><a href="#">Lupa password?</a></p>
+        </form>
+      </section>
+
+      <!-- Dashboard Mahasiswa -->
+      <section id="dashboard-mahasiswa">
+        <h2>Dashboard Mahasiswa</h2>
+        <button>Upload Tugas Baru</button>
+        <h3>Tugas Aktif</h3>
+        <ul>
+          <li>
+            Tugas 1 - Pemrograman Web - Deadline: 25 Juni - Status: Pending
+          </li>
+          <li>Tugas 2 - Basis Data - Deadline: 30 Juni - Status: Dinilai</li>
+        </ul>
+      </section>
+
+      <!-- Form Upload Tugas -->
+      <section id="form-upload">
+        <h2>Upload Tugas</h2>
+        <form>
+          <label for="judul">Judul Tugas</label>
+          <input type="text" id="judul" required />
+
+          <label for="matkul">Mata Kuliah</label>
+          <select id="matkul">
+            <option>Pemrograman Web</option>
+            <option>Basis Data</option>
+          </select>
+
+          <label for="file">Upload File (.pdf/.docx)</label>
+          <input type="file" id="file" />
+
+          <label for="komentar">Komentar</label>
+          <textarea
+            id="komentar"
+            placeholder="Tulis catatan jika ada..."
+          ></textarea>
+
+          <button type="submit">Submit Tugas</button>
+        </form>
+      </section>
+
+      <!-- Dashboard Dosen (Ringkas) -->
+      <section id="dashboard-dosen">
+        <h2>Dashboard Dosen</h2>
+        <button>Buat Tugas Baru</button>
+        <ul>
+          <li>
+            Tugas Pemrograman Web - 25 Tugas Masuk - <button>Nilai</button>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2025 - Sistem Pengelolaan Tugas Kuliah - Universitas Kebangsaan.
+        By Muhammad Fajar
+      </p>
+    </footer>
+  </body>
+</html>
